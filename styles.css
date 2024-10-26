@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #070e16;
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.service {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Black background for About and Contact sections */
+#about, #contact {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+p {
+    margin: 0 auto;
+    width: 80%;
+}
+
+a {
+    color: lightblue;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 90%; /* Make service boxes full width on smaller screens */
+    }
+
+    p {
+        width: 95%; /* Ensure paragraphs are responsive */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Reduce heading size for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Reduce section heading size */
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    p {
+        width: 100%;
+    }
+}
